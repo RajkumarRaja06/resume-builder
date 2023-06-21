@@ -2,14 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="IE=edge"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- favicon -->
     <link
@@ -29,19 +23,73 @@
     />
 
     <!-- normalize css -->
-    <link
-      rel="stylesheet"
-      href="./styles/normalize.css"
-    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
 
     <!-- custom css -->
-    <link
-      rel="stylesheet"
-      href="./styles/style.css"
-    />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!-- custom js -->
+    <div class="form-container">
+      <form>
+        <div class="tittle">
+          <h2>Resume Builder</h2>
+        </div>
+        <input type="text" placeholder="Name" id="username" />
+        <input type="text" placeholder="Title/Sub Heading" id="userTitle" />
+        <textarea
+          name="Work Experience"
+          cols="100%"
+          rows="1"
+          placeholder="Work Experience"
+          id="userExperience"
+          required
+        ></textarea>
+        <textarea
+          name="Academic Details"
+          cols="100"
+          rows="1"
+          placeholder="Academic Details"
+          id="userAcademicDetails"
+        ></textarea>
+        <input type="text" placeholder="Objective" id="userObjective" />
+        <textarea
+          name="Skills"
+          cols="100"
+          rows="1"
+          placeholder="Skills"
+          id="userSkills"
+        ></textarea>
+        <textarea
+          name="Projects"
+          cols="100"
+          rows="1"
+          placeholder="Projects"
+          id="userProjects"
+        ></textarea>
+        <textarea
+          name="Achievements"
+          cols="100"
+          rows="1"
+          placeholder="Achievements"
+          id="userAchievements"
+        ></textarea>
+        <textarea
+          name="Contact"
+          cols="100"
+          rows="1"
+          placeholder="Contact"
+          id="userContact"
+        ></textarea>
+        <button type="button" class="form-btn">
+          <a href="http://127.0.0.1:5500/resume.html">Generate / Edit</a>
+        </button>
+        <button type="button" class="form-btn" onclick="Delete()">
+          Delete
+        </button>
+      </form>
+    </div>
+
     <script src="./scripts/script.js"></script>
   </body>
 </html>
