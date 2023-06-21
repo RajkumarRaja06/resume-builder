@@ -35,8 +35,13 @@
         <div class="tittle">
           <h2>Resume Builder</h2>
         </div>
-        <input type="text" placeholder="Name" id="username" />
-        <input type="text" placeholder="Title/Sub Heading" id="userTitle" />
+        <input type="text" placeholder="Name" id="username" required />
+        <input
+          type="text"
+          placeholder="Title/Sub Heading"
+          id="userTitle"
+          required
+        />
         <textarea
           name="Work Experience"
           cols="100%"
@@ -51,14 +56,21 @@
           rows="1"
           placeholder="Academic Details"
           id="userAcademicDetails"
+          required
         ></textarea>
-        <input type="text" placeholder="Objective" id="userObjective" />
+        <input
+          type="text"
+          placeholder="Objective"
+          id="userObjective"
+          required
+        />
         <textarea
           name="Skills"
           cols="100"
           rows="1"
           placeholder="Skills"
           id="userSkills"
+          required
         ></textarea>
         <textarea
           name="Projects"
@@ -66,6 +78,7 @@
           rows="1"
           placeholder="Projects"
           id="userProjects"
+          required
         ></textarea>
         <textarea
           name="Achievements"
@@ -73,6 +86,7 @@
           rows="1"
           placeholder="Achievements"
           id="userAchievements"
+          required
         ></textarea>
         <textarea
           name="Contact"
@@ -80,6 +94,7 @@
           rows="1"
           placeholder="Contact"
           id="userContact"
+          required
         ></textarea>
         <button type="button" class="form-btn">
           <a href="http://127.0.0.1:5500/resume.html">Generate / Edit</a>
